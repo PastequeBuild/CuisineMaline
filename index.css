@@ -1,0 +1,184 @@
+/*Fichier CSS pour la mise en page de la page d'accueil index.html*/
+
+@font-face {
+    font-family: "Lato-Light";
+    src: url("./fonts/Lato/Lato-Light.ttf");
+}
+
+@font-face {
+    font-family: "Lato-Thin";
+    src: url("./fonts/Lato/Lato-Thin.ttf");
+}
+
+html {
+    scroll-snap-type: y mandatory;
+    scroll-snap-stop: always;
+    overflow-y: scroll;
+    scroll-margin: 0;
+    scroll-padding: 0;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    max-width: 100vw;
+}
+
+#titlePage {
+    background: url('./img/index_background.png') no-repeat;
+    background-size: 100vw 100vh;
+    height: 100vh;
+    width: 100vw;
+}
+
+h1 {
+    font-size: 4em;
+    color: white;
+    margin: 0;
+    font-family: Lato-Thin;
+    margin-left: 25px;
+    padding-top: 20px;
+}
+
+#slogan {
+    color: white;
+    font-size: 1.5em;
+    margin: 0;
+    font-family: Lato-Thin;
+    margin-left: 25px;
+}
+
+#orange {
+    color: orange;
+}
+
+.section {
+    height: 100vh;
+    width: 100vw;
+    /*scroll-snap-align: start;*/
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+h2 {
+    color: white;
+    font-family: Lato-Thin;
+    font-size: 3em;
+    margin: 10px;
+}
+
+#recipesList {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    flex: 1;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.case,
+.bigCase {
+    border: solid 1px rgb(30, 30, 30); /* bordures temporaires */
+    border-left-width: 0;
+    border-bottom-width: 0;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.case {
+    flex: 1;
+}
+
+.bigCase {
+    flex: 2;
+}
+
+.case:hover,
+.bigCase:hover {
+    opacity: 0.5;
+}
+
+.case:hover .recipeName,
+.bigCase:hover .recipeName {
+    opacity: 2;
+    color: orange;
+}
+
+.recipeName {
+    color: white;
+    font-family: Lato-Thin;
+    position: absolute;
+}
+
+#saladCase {
+    background-image: url('./img/salad.png');
+}
+
+#saladName {
+    font-size: 5em;
+    left: 5%;
+    top: 7%;
+}
+
+#mojitoCase {
+    background-image: url('./img/mojito.png');
+}
+
+#mojitoName {
+    font-size: 5em;
+    left: 5%;
+    top: 5%;
+}
+
+#steakTartareCase {
+    background-image: url('./img/steak_tartare.png');
+}
+
+#steakTartareName {
+    font-size: 5em;
+    left: 5%;
+    top: 7%;   
+}
+
+#sushisCase {
+    background-image: url('./img/sushis.png');
+}
+
+#sushisName {
+    font-size: 5em;
+    left: 5%;
+}
+
+#chocolateFondantCase {
+    background-image: url('./img/chocolate_fondant.png');
+}
+
+#chocolateFondantName {
+    font-size: 2em;
+    left: 3%;
+    top: 5%;
+}
+
+p {
+    color: white;
+    font-family: Lato-Thin;
+    margin: 5px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    padding-bottom: 10px;
+}

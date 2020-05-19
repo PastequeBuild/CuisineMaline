@@ -1,0 +1,85 @@
+<!--Page d'accueil du site qui permet de présenter le site puis de se diriger
+    vers d'autres pages grâce aux liens. On peut y revenir par des liens sur
+    les autres pages également-->
+
+
+
+<!DOCTYPE html>
+<html lang='fr'>
+    <head>
+        <meta charset='utf-8'>
+        <title>Cuisine Maline</title>
+        <link href='./index.css' rel='stylesheet'>
+        <link rel="icon" type="image/png" href="./img/icon.png" />
+        <link rel="shortcut icon" type="image/png" href="./img/icon.png" /> 
+        <script src='./scripts.js'></script>
+    </head>
+
+    <body onload='handleButtonsClickEvent()'>
+        <div class='section' id='home'>
+            <div id='titlePage'>
+                <h1>Cuisine <span id="orange">Maline</span></h1>
+                <p id='slogan'>L'appétit vient en mangeant.</p>
+            </div>
+        </div>
+
+        <div class='section' id='recipesList'>
+                <div class='column'>
+                    <div class='case' id='salad'>
+
+                        <span class='recipeName' id='saladName'>Salade</span>
+                    </div>
+
+                    <div class='case' id='mojito'>
+
+                        <span class='recipeName' id='mojitoName'>Mojito</span>
+                    </div>
+                </div>
+
+                <div class='column'>
+                    <div class='bigCase' id='steakTartare'>
+
+                        <span class='recipeName' id='steakTartareName'>Steak tartare</span>
+                    </div>
+
+                    <div class='case' id='crepes'>
+
+                        <span class='recipeName' id='crepesName'>Crêpes</span>
+                    </div>
+                </div>
+            
+                <div class='column'>
+                    <div class='case' id='ratatouille'>
+                        
+                        <span class='recipeName' id='ratatouilleName'>Ratatouille</span>
+                    </div>
+
+                    <div class='case' id='sushis'>
+
+                        <span class='recipeName' id='sushisName'>Sushis</span>
+                    </div>
+
+                    <div class='case' id='chocolateFondant'>
+
+                        <span class='recipeName' id='chocolateFondantName'>Fondant au chocolat</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class='section' id='contact'>
+            <h2>Nous contacter</h2>
+
+            <footer>
+                <p>Valentin GEGOUX & Noé CAILLET © 2020</p>
+                <p>Tous droits réservés.</p>
+            </footer>
+        </div>
+            
+        <!-- <a href="recipe1.html"> img1.png</a>
+        <a href="recipe2.html"> img2.png</a>
+        <a href="recipe3.html"> img3.png</a>
+        <a href="recipe4.html"> img4.png</a>
+        <a href="recipe5.html"> img5.png</a> !-->
+	</body>
+</html>

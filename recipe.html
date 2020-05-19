@@ -1,0 +1,67 @@
+<!--Page de recette type valide pour toutes les recettes. Accessible via des liens -->
+	
+<!DOCTYPE html>
+<html lang='fr'>
+    <head>
+        <meta charset='utf-8'>
+        <title>Cuisine maline</title>
+		<link href='./recipe.css' rel='stylesheet'>
+        <link rel="icon" type="image/png" href="./img/icon.png" />
+		<link rel="shortcut icon" type="image/png" href="./img/icon.png" />
+		<script type="module" src="./recipes.js"></script> 
+        <script src='./scripts.js'></script>
+    </head>
+
+    <body onload='generateRecipePage()'>
+        <h1 id='mainTitle'>Nom de la recette</h1>
+
+		<fieldset id='informations'>
+			<ul id='informations'>
+				<li>Difficulté : <span id='difficulty'></span></li>
+				<li>Temps de préparation : <span id='prepareTime'>x</span> minutes</li>
+				<li> Coût : <span id='cost'></span> € </li>
+			</ul>
+		</fieldset>
+
+		<fieldset id='ingrédients'>
+			<legend>Ingrédients nécessaires</legend>
+			<ul>
+				<li>Ingrédient 1</li>
+				<li>Ingrédient 2</li>
+				<li>Ingrédient 3</li>
+				<li>Ingrédient 4</li>
+				<li>Ingrédient 5</li>
+				<li>Ingrédient 6</li>
+				<li>Ingrédient 7</li>
+				<li>Ingrédient 8</li>
+				<li>Ingrédient 9</li>
+			</ul>
+		</fieldset>
+
+		<fieldset id='recette'>
+			<legend>Préparation</legend>
+			<ol>
+				<li>Étape 1</li>
+				<li>Étape 2</li>
+				<li>Étape 3</li>
+				<li>Étape 4</li>
+				<li>Étape 5</li>
+				<li>Étape 6</li>
+				<li>Étape 7</li>
+				<li>Étape 8</li>
+				<li>Étape 9</li>
+			</ol>
+		</fieldset>
+
+
+		<div class='section' id='contact'>
+            <h2>Nous contacter</h2>
+
+            <footer>
+                <p>Valentin GEGOUX & Noé CAILLET © 2020</p>
+                <p>Tous droits réservés.</p>
+            </footer>
+        </div>
+
+    </body>
+</html>

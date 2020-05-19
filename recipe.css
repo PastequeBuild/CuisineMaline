@@ -1,0 +1,46 @@
+/*Fichier CSS pour la mise en page des pages de recette recipe.html*/
+
+@font-face {
+    font-family: "Lato-Light";
+    src: url("./fonts/Lato/Lato-Light.ttf");
+}
+
+@font-face {
+    font-family: "Lato-Thin";
+    src: url("./fonts/Lato/Lato-Thin.ttf");
+}
+
+body {
+    background-color: rgba(218, 143, 248, 0.568);
+}
+
+#mainTitle {
+    text-align: center;
+    font-family: Lato-Light;
+    font-size: 3em;
+}
+
+#informations {
+    list-style-type: square;
+}
+
+fieldset {
+    margin-bottom: 15px;
+    font-family: Lato-Light;
+    font-size: 1em;
+    border: purple dashed;
+}
+
+legend {
+    font-size: 2em;
+}
+
+footer {
+    position: absolute;
+    bottom: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    padding-bottom: 5px;
+}
